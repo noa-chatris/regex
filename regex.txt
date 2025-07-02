@@ -1,0 +1,35 @@
+REGEX :
+_____________________________
+
+addrese mail : (\w*@[\w|\.]*)
+
+num tel : ((?:\+33|0) ?\d?(?:[-| ]\d{2}){4})
+
+isoler un num de secu : ((?: \d{1,3}){7})
+
+reperer les dates: (\d{2,4}[-\/]\d{2}[-\/]\d{2,4})
+
+carte de crédit : ((?:\d{4}[\ -]){3}\d{4})
+
+addresse ip :(\d{2,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) non compacter 
+
+addresse ip : ((?:\d{1,3}\.){3}\d{1,3}) compacter
+
+addresse MAC : ((?:\w{2}[:-]){5}\w{2})
+
+les urls : ((?:https?:\/\/)?(?:\w\.)?[\w\.\-]+\.[a-z]{2,6}(?:\/[^\s]*)?)
+
+les balise html : (<[\w"\ =>\/:\.]*<\/\w*>)
+
+les mentions et hastag : ([#@]\w+\b(?!\.))
+
+monétaires : ([$€](?:\d|\.)+) ||||||| ([$€]\d*\.\d{2})
+
+code postale : (\d{5})
+
+
+
+
+mention de con pour code postale:
+- [Cc]odes? [pP](?:o|au)sta(?:ux|o) : (?:(\d{5})*,? ?\.?)
+
